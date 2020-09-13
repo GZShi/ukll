@@ -24,7 +24,7 @@
         <Part
           ref="part"
           v-for="part in score.parts"
-          :key="part.index"
+          :key="`${score.meta.title}-${part.index}`"
           :part="part"
           :section-start="part.index%4==0"
           :size="partSize"
@@ -62,6 +62,10 @@ export default {
     }
   },
   mounted() {
+    let paramIndex = parseInt(this.$route.params.index, 10) - 1
+    let song = this.list[paramIndex] || this.list[0]
+    this.songName = song.name
+
     this.updateScore()
     this.resize()
 
@@ -107,6 +111,7 @@ export default {
     },
     updateScore() {
       this.score = songs.getScoreByName(this.songName)
+      this.resize()
     }
   }
 }

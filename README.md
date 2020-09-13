@@ -1,21 +1,8 @@
-# ukll
+# 尤克里里入门
 
-> A Vue.js project
+> https://5kbps.com/ukll/
 
-## Build Setup
+## 入门曲列表
 
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+* [虫儿飞](https://5kbps.com/ukll/#/score/1)
+* [天空之城](https://5kbps.com/ukll/#/score/2)
